@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/profile.css"/>
+</head>
+<body>
+
+<div class="container mt-5">
+  <form id="profileForm">
+    <h2 class="text-center">Profile</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" readonly>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="0" readonly>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" readonly>
+    <label for="contact">Contact:</label>
+    <input type="text" id="contact" name="contact" readonly>
+    <button type="button" class="btn btn-primary" id="editBtn">Edit</button>
+    <button type="button" class="btn btn-success" id="saveBtn" style="display: none;">Save</button>
+    <button type="button" class="btn btn-danger" id="logoutBtn">Logout</button>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="js/profile.js"></script>
+
+</body>
+</html>

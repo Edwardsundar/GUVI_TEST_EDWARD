@@ -18,7 +18,7 @@ function registerUser() {
   // Perform AJAX request to register user
   $.ajax({
     type: 'POST',
-    url: 'php/register.php', // Change the path to your registration PHP script
+    url: 'php/register.php', 
     data: {
         username: username,
         password: password,
@@ -31,8 +31,10 @@ function registerUser() {
     },
     error: function(error) {
         // Handle registration error
+        console.log(response);
         alert('Registration failed: ' + error.responseText);
     }
 });
+
 
 }
